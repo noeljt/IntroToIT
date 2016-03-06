@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>JavaScript In-Class - Intro ITWS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="js-inclass.css" type="text/css" />
+    <script type="text/javascript" src="js-inclass.js"></script>
+  </head>
+  <body>
+    <div id="bodyBlock">
+      <h1>In-Class JavaScript Exercises</h1>
+      <p>This is a document to get you started with JavaScript.</p>
+      
+      <!-- we'll modify the following block with JavaScript -->
+      <div id="output">We'll insert some output here using JavaScript.</div>
+      
+      <p>
+        We'll manually add HTML and JavaScript below here.  
+      </p>
+
+      <p>
+        <!-- An example script declaration: -->
+        <script type="text/javascript">
+          // embedded JavaScript will be placed between these script tags.
+          document.write(firstName + " is " + age + ".<br/>");
+          if (age < insuranceCutOffAge) {
+            document.write(firstName + " can be insured.<br/>");
+          } else {
+            document.write(firstName + " cannot be insured.<br/>");
+          }
+        </script>
+        <button type="button" onclick="alert(firstName);")>
+          Who's there?
+        </button>
+        <br/>
+        <a href="javascript:alert(cube(5));">
+          You can put JavaScript in an anchor tag too. What is the cube of 5?
+        </a>
+        <br/>
+        <script type="text/javascript">
+          document.write("write() is a method of the document object");
+        </script>
+        <br/>
+        <button type="button" onclick='window.location = "http://www.rpi.edu";'>
+          Click to see what happens
+        </button>
+        <button type="button" onclick='location = "http://www.ibm.com";'>
+          Click here to see also
+        </button>
+        <br/>
+        <button type="button" onclick="document.title = 'New Title';">
+          Click to change the title
+        </button>
+        <br/>
+        <button type="button" onclick="javascript:writeIt();">
+          Write something
+        </button>
+        <button type="button" onclick="javascript:changeFoot();">
+          Change Footer
+        </button>
+      </p>
+
+
+      <br/>
+      <footer>Copyright Now - For Ever.</footer>
+      
+    </div>
+  </body>
+</html>
+
+

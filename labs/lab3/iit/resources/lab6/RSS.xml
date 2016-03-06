@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+	<title>Joseph's RSS Feed</title>
+	<description>Lab 4 RSS Feed</description>
+	<link>https://afsws.rpi.edu/AFS/home/00/noelj/public_html/iit/resources/RSS.rss</link>
+	<lastBuildDate>Mon, 12 Oct 2015 21:21:00 +0000 </lastBuildDate>
+	<pubDate>Mon, 12 Oct 2015 21:20:00 +0000 </pubDate>
+ 
+	<item>
+		<title>Call of the Ancestors</title>
+		<description>New Runescape Quest, Woohoo!</description>
+		<link>http://services.runescape.com/m=news/call-of-the-ancestors--novice-quest?jptg=ia&amp;jptv=community_news</link>
+	  <pubDate>Mon, 12 Oct 2015 22:00:00 +0000 </pubDate>
+	</item>
+
+	<item>
+		<title>Help test PTR Server</title>
+		<description>Blizzard needs help stress testing their PTR servers.</description>
+		<link>http://us.battle.net/d3/en/blog/19909351/ptr-server-slam-we-need-your-help-10-6-2015</link>
+	  <pubDate>Mon, 12 Oct 2015 23:00:00 +0000 </pubDate>
+	</item>
+
+	<item>
+		<title>Get some delicious E-Juice!</title>
+		<description>Craft Vapery offers an amazing and flexible E-Juice subsciption, tailored to your tastes, preference, and budget.</description>
+		<link>https://www.craftvapery.com/subscribe</link>
+	  <pubDate>Tue, 13 Oct 2015 00:00:00 +0000 </pubDate>
+	</item>
+ 
+</channel>
+</rss>

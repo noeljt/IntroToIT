@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+	<title>Joseph's ATOM Feed</title>
+	<subtitle>Lab 4 ATOM Feed.</subtitle>
+	<link href="https://afsws.rpi.edu/AFS/home/00/noelj/public_html/iit/resources/ATOM.xml" rel="self" />
+	<id>https://afsws.rpi.edu/AFS/home/00/noelj/public_html/iit/resources/ATOM.xml</id>
+	<updated>2015-10-13T17:30:02Z</updated>
+	<author>
+		<name>Joseph Noel</name>
+		<email>noelj@rpi.edu</email>
+	</author>
+ 
+	<entry>
+		<title>Call of the Ancestors</title>
+		<link href="http://services.runescape.com/m=news/call-of-the-ancestors--novice-quest?jptg=ia&amp;jptv=community_news" />
+		<updated>2015-10-13T17:30:03Z</updated>
+		<id>http://services.runescape.com/m=news/call-of-the-ancestors--novice-quest?jptg=ia&amp;jptv=community_news</id>
+		<summary>New Runescape Quest, Woohoo!</summary>
+	</entry>
+
+	<entry>
+		<title>Help test PTR Server</title>
+		<link href="http://us.battle.net/d3/en/blog/19909351/ptr-server-slam-we-need-your-help-10-6-2015" />
+		<updated>2015-10-13T17:30:04Z</updated>
+		<id>http://us.battle.net/d3/en/blog/19909351/ptr-server-slam-we-need-your-help-10-6-2015</id>
+		<summary>Blizzard needs help stress testing their PTR servers.</summary>
+	</entry>
+
+	<entry>
+		<title>Get some delicious E-Juice!</title>
+		<link href="https://www.craftvapery.com/subscribe" />
+		<updated>2015-10-13T17:30:05Z</updated>
+		<id>https://www.craftvapery.com/subscribe</id>
+		<summary>Craft Vapery offers an amazing and flexible E-Juice subsciption, tailored to your tastes, preference, and budget.</summary>
+	</entry>
+ 
+</feed>
+
+
+

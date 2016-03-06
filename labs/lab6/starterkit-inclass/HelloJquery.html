@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello jQuery!</title>
+<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+  // we will add our javaScript here
+  // 
+  //  // #1 - register a ready event for the document
+  $(document).ready(function() {
+ 		// Do stuff when DOM is ready
+    // #2 - Show an alert when clicking a link
+    $("a").click(function() {
+    	alert("Hello World!");
+    });
+  });
+
+
+
+</script>
+</head>
+<body>
+  <!-- we will add our HTML here -->
+
+  <!-- #2 add a link for our alert -->
+  <a href="#">Link</a>
+
+</body>
+</html>
