@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Lab 9: Security, Intro ITWS, Fall 2015</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://www.rpi.edu/favicon.ico" type="image/ico" rel="icon"/>
+    <link href="http://www.rpi.edu/favicon.ico" type="image/ico" rel="shortcut icon"/>
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif; 
+      }
+      #content {
+        margin: 0 auto;
+        padding: 3em 2em;
+        max-width: 800px;
+      }
+      h1 {
+        font-size: 1.5em;
+        margin: 0; 
+      }
+      h2 {
+        font-size: 1.1em;
+        margin-top: 0;  
+      }
+      h3 {
+        font-size: 1em;
+        margin-top: 0;  
+      }
+      ol li {
+        margin-bottom: 1em; 
+      }
+      ul li {
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="content">
+      <h1>Lab 9: Security</h1>
+      <h2>Intro ITWS, Fall 2015</h2>
+      
+      <h3>Secure your LAMP stack and try some XSS</h3>
+      
+      <p>
+        We will do most of this together in class.  You will need to package 
+        up the parts of this lab into "lab9-<em>YourName</em>.zip" for upload.
+      </p>
+      
+      <ul>
+        <li>
+          Download the lab: <a target="_blank" href="lab9.zip">lab9.zip</a> from the LMS.
+        </li>
+        <li>
+          Guidelines:
+          <ol>
+            <li> 
+              <strong>Secure your XAMPP environment</strong> <em>(4 points)</em>
+              <ul>
+                <li>
+                  With XAMPP running, visit <a href="http://localhost">http://localhost</a>.
+                </li>
+                <li>Secure the XAMPP administrative pages with a password</li> 	 
+                <li>Change the MySQL admin user root password (this will also secure PhpMyAdmin)</li>
+                <li><em>Put these passwords somewhere safe (e.g. a password manager) and/or remember them.</em></li>
+                <li>
+                  When this is done <a href="http://localhost">http://localhost</a> should 
+                  display that these items are secure.  Take a screenshot of this page and save it to the lab9 
+                  directory as <strong>xampp.gif</strong>.  
+                </li>
+                <li>
+                  Open lab9.html in a browser.  At the top of the document, you
+                  will see a link to xampp.gif.  Confirm that this link works for your file.
+                  (If it doesn't, fix it.)
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Try some simple XSS</strong> <em>(6 points)</em>
+              <ul>
+                <li>
+                  lab9.html contains a form and some javascript (in lab9.js).
+                  When the form is submitted, the contents of the "comments" 
+                  field are loaded back onto the page (in the pink box below
+                  the form) <em>without output escaping</em>.  Try your hand 
+                  at some simple XSS attacks using the following techniques.                  
+                </li>
+                <li>
+                  Copy the following text to the 
+                  comments field and press submit:
+                  <textarea rows="1" cols="80">Hey there <script>alert("Hi there");</script></textarea>
+                </li>
+                <li>
+                  Now try the following text in the comments field:
+                  <textarea rows="1" cols="80">We got your cookie <script>alert(document.cookie);</script></textarea>
+                </li>
+                <li>
+                  Create a script tag (like those above) in the comments field to make the browser jump to 
+                  http://www.rpi.edu when the user clicks "submit" (look up "window.location" for help).
+                </li>
+                <li>
+                  When you are successful, modify the file lab9.html and paste the 
+                  successful code into the body of the textarea (between 
+                  &lt;textarea ...&gt; and &lt;/textarea&gt;) so that the 
+                  code can be seen when the page is reloaded in the browser.
+                </li>
+                <li>
+                  Save the lab9.html file, zip up lab9-<em>YourName</em>.zip and upload
+                  it to the assignment dropbox for the lab.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <strong>This lab is due by end of day on Monday, November 26, 2015.</strong>
+        </li>
+      </ul>
+       
+    
+    </div>
+  </body>
+</html>
+
+
